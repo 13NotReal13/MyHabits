@@ -8,8 +8,7 @@
 import Foundation
 import SwiftUI
 
-@Observable
-final class StorageManager {
+final class StorageManager: ObservableObject {
     @AppStorage("habits") var savedHabits: String = ""
     
     var habits: [Habit] {
